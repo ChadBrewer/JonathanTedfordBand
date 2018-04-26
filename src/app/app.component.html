@@ -3,47 +3,20 @@
 <link rel="stylesheet" type="text/css" href="app.component.css">
 </head>
 <body>
-<script>
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-<div style="text-align:center">
-  <h1>
-      <a routerLink="/">{{ title }}</a>
-  </h1>
-</div>
-<router-outlet></router-outlet>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Video</a>
-    <a href="#">Store</a>
-  </div>
-</div>
-<ul>
-  <li>
-    <h2><a routerLink="/videos">Videos</a></h2>
-  </li>
-  <li>
-    <h2><a routerLink="/store">Store</a></h2>
-  </li>
-</ul>
-</body>
+    <div>
+        <ul id="navBar">
+            <router-outlet></router-outlet>
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/videos">Videos</a></li>
+            <li><a routerLink="/store">Store</a></li>
+        
+        </ul>
+        </div>
+    
+    <div style="text-align:center">
+      <h1>
+          <a routerLink="/" id="title">The Jonathan Tedford Band</a>
+      </h1>
+    </div>
+    <router-outlet></router-outlet>
+    </body>
