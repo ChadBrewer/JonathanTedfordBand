@@ -6,10 +6,15 @@
     background-color: black;
 }
 
-#theMan {
-    float: left;  
-}
 
+#title {
+    font-size: 75px;
+    color: whitesmoke;
+}
+.theLegend {
+    color: whitesmoke;
+    font-size: 20pt;
+}
 body {
     background-color: #333; 
 
