@@ -2,6 +2,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="app.component.css">
 </head>
+<body>
 <script>
     /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -31,7 +32,7 @@ window.onclick = function(event) {
 </div>
 <router-outlet></router-outlet>
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
   <div id="myDropdown" class="dropdown-content">
     <a href="#">Video</a>
     <a href="#">Store</a>
@@ -45,4 +46,4 @@ window.onclick = function(event) {
     <h2><a routerLink="/store">Store</a></h2>
   </li>
 </ul>
-
+</body>
