@@ -6,14 +6,20 @@ import { VideosComponent } from './videos/videos.component';
 import { StoreComponent } from './store/store.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import {
     MatButtonModule,
     MatToolbarModule,
     MatIconRegistry,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule
 } from "@angular/material";
-import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
     { path: 'videos', component: VideosComponent },
@@ -37,7 +43,14 @@ const appRoutes: Routes = [
     HttpClientModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
