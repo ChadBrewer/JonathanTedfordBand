@@ -12,21 +12,6 @@
     color: whitesmoke;
 }
 
-#test {
-    width: auto;
-    height: 62%;
-}
-
-.theLegend {
-    color: whitesmoke;
-    font-size: 20pt;
-}
-
-.Events {
-    color: whitesmoke;
-    font-size: 20pt;
-}
-
 body {
     background-color: #333;
 }
