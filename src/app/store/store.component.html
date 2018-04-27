@@ -1,78 +1,56 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel = "stylesheet" type = "text/css" href = "store.component.css">
-        <title> The Johnathan Tedford Band | Store </title>
-    </head>
-    <body> 
-            <ul id="navBar">
-                    <router-outlet></router-outlet>
-                    <li><a routerLink="/home">Home</a></li>
-                    <li><a routerLink="/videos">Videos</a></li>
-                    <li><a routerLink="/store">Store</a></li>
-                    <li><a href="https://www.facebook.com/Jonathan-Tedford-Music-178930662242485/">Visit our Facebook Page</a></li>
-                    <li style="float:right"><a>Please call (479) 965-5022 for bookings</a></li>
-                </ul>
+<div class="product-row">
+    <div class="product-cell">
+        <img border="0" width="200" height="200" alt="Tedford T-Shirt" src="../../assets/Tedford_T-Shirt.jpg">
+        <h4>Tedford T-Shirt</h4>
 
-        <div class = "product-row">
-            <div class = "product-cell">
-                <img border = "0" width = "200" height = "200" alt = "Tedford T-Shirt" src = .\Imgs\Tedford_T-Shirt.jpg>
-                </img>
-                <h4>Tedford T-Shirt</h4>
+        <div class="price">
+            <h4>US $24.95</h4>
+        </div>
 
-                <div class = "price">
-                    <h4>US $24.95</h4>
+        <div class="options">
+            <div class="size">
+                <div class="size-label">
+                    Size:
                 </div>
 
-                <div class = "options">
-                    <div class = "size">
-                        <div class = "size-label">
-                        Size: 
-                        </div>
+                <select>
+                    <option value="0">XL</option>
+                    <option value="1">L</option>
+                    <option value="2">M</option>
+                    <option value="3">S</option>
+                </select>
+            </div>
 
-                        <select> 
-                            <option value = "0">XL</option>
-                            <option value = "1">L</option>
-                            <option value = "2">M</option>
-                            <option value = "3">S</option>
-                        </select>
-                    </div>
-
-                    <div class = "quantity">
-                        <div class = "quantity-label">
-                            Quantity:
-                        </div>
-                        <input width = "2" maxlength = "2" type = "text" value = "1">
-                        </input>
-                    </div> 
-                </div> 
-
-                    <button class = "add-to-cart">
-                        ADD TO CART
-                    </button>
-            </div> 
-         
-            <div class = "product-cell">
-                <img border = "0" width = "200" height = "200" alt = "Tedford Coozie" src = .\Imgs\Tedford_Coozie.jpg>
-                </img>
-                <h4>Tedford Coozie</h4>
-    
-                <div class = "price">
-                    <h4>US $12.00</h4>
+            <div class="quantity">
+                <div class="quantity-label">
+                    Quantity:
                 </div>
-                <div class = "options">                  
-                    <div class = "quantity">
-                        <div class = "quantity-label">
-                             Quantity:
-                        </div>
-                        <input width = "2" maxlength = "2" type = "text" value = "1">
-                        </input>
-                    </div> 
-                </div> 
-                <button class = "add-to-cart">
-                    ADD TO CART
-                </button>
-            </div> 
-        </div> 
-</body>
-</html>
+                <input width="2" maxlength="2" type="text" value="1">
+            </div>
+        </div>
+
+        <button class="add-to-cart">
+            ADD TO CART
+        </button>
+    </div>
+
+    <div class="product-cell">
+        <img border="0" width="200" height="200" alt="Tedford Coozie" src="../../assets/Tedford_Coozie.jpg">
+        <h4>Tedford Coozie</h4>
+
+        <div class="price">
+            <h4>US $12.00</h4>
+        </div>
+        <div class="options">
+            <div class="quantity">
+                <div class="quantity-label">
+                    Quantity:
+                </div>
+                <input width="2" maxlength="2" type="text" value="1">
+            </div>
+        </div>
+        <button class="add-to-cart">
+            ADD TO CART
+        </button>
+    </div>
+</div>
