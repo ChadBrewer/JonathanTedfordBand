@@ -5,8 +5,12 @@ import { AppComponent } from './app.component';
 import { VideosComponent } from './videos/videos.component';
 import { StoreComponent } from './store/store.component';
 import { HomeComponent } from './home/home.component';
-import { MatButtonModule } from "@angular/material";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {
+    MatButtonModule,
+    MatToolbarModule
+} from "@angular/material";
 
 const appRoutes: Routes = [
     { path: 'videos', component: VideosComponent },
@@ -27,7 +31,8 @@ const appRoutes: Routes = [
         appRoutes,
         { enableTracing: false }
     ),
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
