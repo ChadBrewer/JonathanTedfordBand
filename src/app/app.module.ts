@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from './app.component';
@@ -9,8 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconRegistry,
+    MatIconModule
 } from "@angular/material";
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
     { path: 'videos', component: VideosComponent },
@@ -31,10 +34,16 @@ const appRoutes: Routes = [
         appRoutes,
         { enableTracing: false }
     ),
+    HttpClientModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [MatIconRegistry],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+    constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
+        matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg'));
+    }
+}

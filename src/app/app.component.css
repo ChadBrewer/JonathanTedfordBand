@@ -14,7 +14,7 @@
 }
 
 .nav-button {
-    margin-left: 24px;
+    margin-left: 36px;
 }
 
 .nav-button:hover {
@@ -26,5 +26,10 @@
 }
 
 .phone-tagline {
-    margin-right: 24px;
+    margin-right: 36px;
+}
+
+mat-icon {
+    vertical-align: text-bottom;
+    margin-right: 6px;
 }
