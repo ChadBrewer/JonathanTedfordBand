@@ -1,0 +1,53 @@
+<div class="container">
+    <mat-card class="product-card">
+        <mat-card-header>
+            <mat-card-title>
+                <span class="product-title-text mat-headline">Tedford T-Shirt</span>
+                <span class="product-title-text mat-title">US $24.95</span>
+            </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="product-image" alt="Tedford T-Shirt" src="../../assets/Tedford_T-Shirt.jpg">
+        <mat-card-content>
+            <mat-form-field class="product-content-field">
+                <mat-select placeholder="Size">
+                    <mat-option [value]="0">
+                        XL
+                    </mat-option>
+                    <mat-option [value]="1">
+                        LG
+                    </mat-option>
+                    <mat-option [value]="2">
+                        M
+                    </mat-option>
+                    <mat-option [value]="3">
+                        S
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="product-content-field">
+                <input matInput type="number" placeholder="Quantity" min="1">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">ADD TO CART</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="product-card">
+        <mat-card-header>
+            <mat-card-title>
+                <span class="product-title-text mat-headline">Tedford Coozie</span>
+                <span class="product-title-text mat-title">US $12.00</span>
+            </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="product-image" alt="Tedford T-Shirt" src="../../assets/Tedford_Coozie.jpg">
+        <mat-card-content>
+            <mat-form-field class="product-content-field">
+                <input matInput type="number" placeholder="Quantity" min="1">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">ADD TO CART</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

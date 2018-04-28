@@ -1,0 +1,9 @@
+﻿.video-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+object{
+    margin-bottom: 48px;
+}

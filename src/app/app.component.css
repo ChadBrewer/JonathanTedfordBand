@@ -1,0 +1,36 @@
+.title-bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+}
+
+.title {
+    margin-top: 112px;
+    color: whitesmoke;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.nav-button {
+    margin-left: 36px;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+}
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.phone-tagline {
+    margin-right: 36px;
+}
+
+mat-icon {
+    vertical-align: text-bottom;
+    margin-right: 6px;
+}

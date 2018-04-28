@@ -1,0 +1,43 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card {
+    max-width: 20%;
+    padding-bottom: 36px;
+
+}
+
+.product-image {
+    width: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+mat-card-title {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+mat-card-actions {
+    text-align: center;
+}
+
+.product-title-text {
+    margin: 0;
+}
+
+.product-content-field {
+    width: 40%;
+}
