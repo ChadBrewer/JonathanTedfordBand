@@ -7,8 +7,13 @@ describe('jt-youtube App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('Should display The Jonathan Tedford Band', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('The Jonathan Tedford Band');
+  });
+
+  it('Should display the youtube videos', () => {
+    page.navigateToVideos();
+    expect(page.getYoutubeVideo()).toBeTruthy();
   });
 });
