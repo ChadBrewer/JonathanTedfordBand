@@ -7,6 +7,9 @@ export class AppPage {
   navigateToVideos() {
     return browser.get('/videos');
   }
+  navigateToStore() {
+    return browser.get('/store');
+  }
   getParagraphText() {
     return element(by.css('app-root h1')).getText();
   }
