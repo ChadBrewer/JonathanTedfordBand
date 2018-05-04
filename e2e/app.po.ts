@@ -17,5 +17,6 @@ export class AppPage {
     return element(by.tagName('object')).isDisplayed();
   }
   playYoutubeVideo() {
+    return element(by.tagName('object')).isEnabled();
   }
 }
