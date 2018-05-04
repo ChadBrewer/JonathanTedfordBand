@@ -16,4 +16,9 @@ describe('jt-youtube App', () => {
     page.navigateToVideos();
     expect(page.getYoutubeVideo()).toBeTruthy();
   });
+
+  it('Should play the youtube videos', () => {
+    page.navigateToVideos();
+    expect(page.playYoutubeVideo()).toBeTruthy();
+  })
 });
