@@ -7,7 +7,6 @@ import { StoreComponent } from './store/store.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
 import {
     MatButtonModule,
     MatToolbarModule,
