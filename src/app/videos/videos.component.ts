@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-
+import { YoutubeVideo } from './video';
+import 'whatwg-fetch';
 
 declare var gapi: any;
 

@@ -14,9 +14,9 @@ export class AppPage {
     return element(by.css('app-root h1')).getText();
   }
   getYoutubeVideo() {
-    return element(by.tagName('object')).isDisplayed();
+    return element(by.tagName('iframe')).isDisplayed();
   }
   playYoutubeVideo() {
-    return element(by.tagName('object')).isEnabled();
+    return element(by.tagName('iframe')).isEnabled();
   }
 }
