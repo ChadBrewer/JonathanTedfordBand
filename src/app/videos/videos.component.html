@@ -1,5 +1,12 @@
 ﻿<div class="video-container">
-    <object class="mat-elevation-z6" data="https://www.youtube.com/embed/j0ASMZq6GLQ" width ="560" height="315"></object>
-    <object class="mat-elevation-z6" data="https://www.youtube.com/embed/EIF_iIns8CM" width="560" height="315"></object>
-    <object class="mat-elevation-z6" data="https://www.youtube.com/embed/8vaXX9E8ymc" width="560" height="315"></object>
+    <mat-card *ngFor="let video of videos" class="video-card">
+        <mat-card-content>
+            <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + video.Id)' width="560" height="315"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p class="view-count">Views: {{video.viewCount ? video.viewCount : ""}}</p>
+        </mat-card-content>
+    </mat-card>
+    <!-- <object class="mat-elevation-z6" data="https://www.youtube.com/embed/" width ="560" height="315"></object>
+    <object class="mat-elevation-z6" data="https://www.youtube.com/embed/" width="560" height="315"></object>
+    <object class="mat-elevation-z6" data="https://www.youtube.com/embed/" width="560" height="315"></object> -->
 </div>

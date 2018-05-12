@@ -4,6 +4,12 @@
     flex-wrap: wrap;
 }
 
-object{
-    margin-bottom: 48px;
+.video-card {
+    padding: 0;
+    margin: 24px;
+}
+
+.view-count {
+    margin: 0;
+    padding: 12px;
 }
