@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from './app.component';
 import { VideosComponent } from './videos/videos.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { StoreComponent } from './store/store.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,7 +35,7 @@ import {
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule
-} from "@angular/material";
+} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
@@ -59,6 +60,14 @@ const appRoutes: Routes = [
 
     LazyScrollDirective,
     HomeComponent,
+    VideosListComponent,
+    VideosSearchComponent,
+    VideoPlayerComponent,
+    VideosPlaylistComponent,
+    VideoDurationPipe,
+    VideoLikesViewsPipe,
+    VideoNamePipe,
+    LazyScrollDirective
   ],
   imports: [
     BrowserModule,
@@ -80,8 +89,8 @@ const appRoutes: Routes = [
     MatInputModule
   ],
   providers: [
-      MatIconRegistry,
-      YoutubeApiService,
+    MatIconRegistry,
+    YoutubeApiService,
     YoutubePlayerService,
     PlaylistStoreService,
     NotificationService,
